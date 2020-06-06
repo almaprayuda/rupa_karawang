@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+	scroll-behavior: smooth;
+	/*border: 1px solid red;*/
+}
+/*body{
+	background-color: #cfd8dc;
+}*/
+header{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	background-color: #000a12;
+	z-index: 10;
+}
+header ul{
+	margin-top: 15px;
+	float: right;
+	margin-bottom: 15px;
+
+}
+@media only screen and (min-width: 756px) {
+	header ul li{
+		padding: 10px 20px;
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 756px) {
+	header ul li{
+		padding: 10px 10%;
+		display: inline-block;
+	}	
+}
+header ul li a{
+	text-decoration: none;
+	color: #eceff1;
+}
+@media only screen and (min-width: 756px) {
+	.logo{
+		position: absolute;
+		left: 30px;
+		top: 8px;
+	}
+}
+.logo{
+	text-align: center;
+}
+.line{
+	height: auto;
+	width: 100%;
+	padding-top: 80px;
+	background-color: black;
+}
+.line ul li{
+	padding: 4px 30px;
+	display: inline-block;
+}
+.line ul li a:hover{
+	color: #263238;
+}
+.line ul li a{
+	color: #86aec2;
+	text-decoration:none;
+}
+.navicon{
+	width: 28px;
+	height: auto;
+	vertical-align: middle;
+}
+.cari{
+	border: none;
+	width: 150px;
+	padding: 7px 30px;
+	color: #eceff1;
+	border-radius:2px;
+	background-color: #263238;
+	transition: width 0.5s ease;
+}
+.cari[type=text]:focus {
+ 	width: 300px;
+}
+button{
+	border: none;
+	padding: 7px 20px;
+	border-radius:2px;
+	color: white;
+	cursor: pointer;
+	background-color: black;
+}
+.top{
+	position: fixed;
+	right: -50px;
+	bottom: 10px;
+	z-index: 9;
+	transition: 0.4s ease-in-out;
+}
+.top:hover{
+	right: 0;
+	transition: 0.4s ease-out;
+	bottom: 10px;
+	z-index: 9;
+}
+@media only screen and (max-width: 756px) {
+	.heroimg{
+		margin-top: 80px;
+	}
+	.margin-atas{
+		margin-top: 80px;
+	}
+	.notif-card{
+		max-height: 116px;
+	}
+}
+@media only screen and (min-width: 756px) {
+	.main-content{
+		display: flex;
+	}
+}
+.content{
+	margin: 0 5px 0 5px;
+	flex: 1;
+	width: 80%;
+	/*border: 1px solid grey;*/
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+footer{
+	background: linear-gradient(rgba(0, 10, 18, 0.8), rgba(0, 10, 18, 1)), url('../images/footer.jpg');
+	background-size: cover;
+	/*background-color: #000a18;*/
+	color: #b0bec5;
+}
+.content ul li{
+	border:1px solid #b0bec5;
+	padding: 5px;
+	margin: 5px;
+	width: 70%;
+	list-style-type: none;
+}
+.content ul li:hover{
+	background-color: #b0bec5;
+	color: #000a18;
+	font-weight: bold;
+	transition: 0.3s ease;
+}
+.animasi-text{
+	animation: pop 5s infinite;
+	background-color: #d32f2f;
+	padding: 6px 18px;
+	border-radius: 20px;
+	display: inline-block;
+}
+@keyframes pop {
+	0%{
+		transform: translateX(0);
+	}
+	4%{
+		transform: translateX(120px);
+	}
+	15%{
+		transform: translateX(0);
+	}
+}
+.favorit{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-image: url('images/heart-on.png');
+	background-size: cover;
+}
+.favorit:hover{
+	background-image: url('images/heart-on.png');
+}
+.event{
+	 width:100%;
+	 height:auto;
+	 border-radius:20px;
+	 cursor: pointer;
+}
+.event:hover{
+	animation: lele 0.4s ease;
+}
+@keyframes lele {
+	0%{
+		transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(30px);
+	}
+	50%{
+		transform: translateX(-30px);
+	}
+	75%{
+		transform: translateX(30px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+.border-dikit{
+	border:1px solid #263238;
+}
+.padding{
+	padding: 3% 3%;
+}
+.notif-card:hover{
+	animation: 0.2s notif ease;
+	background: white;
+}
+@keyframes notif{
+	0%{
+		transform: translateX(0px);
+	}
+	50%{
+		transform: translateX(40px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 15;
+  width: 380px;
+  min-height: 250px;
+  height: auto;
+  max-height:400px;
+  overflow:hidden;
+  right: 0;
+  border-radius: 8px;
+  transition: 1s ease;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;color: red;}
+.dropdown:hover .dropdown-content {display: block;}
+
+#faded {
+	animation: fade 2s;
+}
+
+@keyframes fade {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+#ruang {
+	position: relative;
+	animation: ruang 1s;
+}
+
+@keyframes ruang {
+	0% {opacity: 0;top: -100px}
+	50% {opacity: 0;top: -50px}
+	100% {opacity: 1;top: 0}
+}

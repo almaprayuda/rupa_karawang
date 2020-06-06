@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rupa Karawang</title>
+		<link rel="icon" href="images/logo2.png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=" theme-color" content="#000a12">
+		<style type="text/css">
+		.container {
+		  position: relative;
+		  width: 50%;
+		}
+
+		.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		  /*animation: angkasa 25s infinite;*/
+		}
+		@keyframes angkasa {
+			0%{
+				transform: translateY(20px);
+			}
+			25%{
+				transform: translateY(-20px);
+			}
+			50%{
+				transform: translateY(20px);
+			}
+			75%{
+				transform: translateY(-20px);
+			}
+			100%{
+				transform: translateY(20px);
+			}
+		}
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background: linear-gradient(rgba(0, 10, 18, 0.6), rgba(0, 10, 18, 1));
+		}
+
+		.container:hover .overlay {
+		  opacity: 1;
+		}
+
+		.text {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  font-size: 18px;
+		}
+		.bg-galeri{
+			background: linear-gradient(rgba(0, 10, 18, 1), rgba(0, 10, 18, 0.8)), url('images/footer.jpg');
+			/*background-size: cover;*/
+			color: #b0bec5;
+			height: auto;
+			animation: bg 120s infinite;
+		}
+		@keyframes bg {
+			0%{
+				background-position: left;
+				}
+			25%{
+				background-position: center;
+				}
+			50%{
+				background-position: right;
+				}
+			75%{
+				background-position: center;
+				}
+			100%{
+				background-position: left;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<a href="index.html"><img style="width: 120px;height: auto;" src="images/logo.png"></a>
+			</div>
+			<ul>
+				<li>
+					<form>
+						<input placeholder="Telusuri" class="cari" type="text" name=""><button>Cari</button>
+					</form>
+				</li>
+				<div class="dropdown">
+				<li><a href="notifikasi.html"><img class="navicon dropbtn" src="images/notif.png"></a></li>
+				  	<div class="dropdown-content">
+						<div style="padding: 3% 3%;">
+							<b>NOTIFIKASI</b>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">INFORMASI PESANAN</small><br/>
+							<small>Kurirmu Akan tiba dirumahmu lohh. jangan kemana-mana dulu, Tunggu aja ...</small>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">PEMBELIAN BERHASIL</small><br/>
+							<small>ASIIIKK... Barangnya sudah ditangan nihh. gimana menurut kamu, hebatkan kurir ...</small>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">EKSTRA GRATIS ONGKIR</small><br/>
+							<small>Terima kasih sudah bergabung di Ruang! Voucher Gratis Ongkir Min. Belanja RP0 ...</small>
+						</div>
+						<hr/>
+						<a align="center" href="notifikasi.html"><small><b>Selengkapnya</b></small></a>
+					</div>
+				</div>
+				<li><a href="index.html"><img class="navicon" src="images/home.png"></a></li>
+				<li><a href="cart.html"><img class="navicon" src="images/cart.png">&nbsp; Keranjang</a></li>
+				<li style="border-left: 1px solid black"><a href="login.html"><button>Masuk</button></a></li>
+			</ul>
+		</header>
+		<div class="line">
+			<ul>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li><a href="index.html#promo">Promo</a></li>
+			</ul>
+		</div>
+		<div class="top">
+			<a href="#" style="text-decoration: none;color: white;"><button><img class="navicon" src="images/top.png"></button></a>
+		</div>
+<!-------------------------------------CONTENT-------------------------------------------->
+		
+		<center>
+			<div class="bg-galeri">
+				<div>
+					<div style="padding: 4% 2% 0 2%;text-align: left;">
+						<h2 style="font-family:segoe script;animation: angkasa 15s infinite;">Kamu Harus Tahu !</h2>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 25s infinite;" src="images/poster/poster-01.jpg">
+						<div class="overlay">
+					    	<div class="text">Jaipongan terlahir melalui proses kreatif dari tangan dingin H. Suanda sekitar tahun 1976 di Karawang</div>
+					  	</div>
+					</div>
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 18s infinite;" src="images/poster/poster-02.jpg">
+						<div class="overlay">
+					    	<div class="text">Sorabi Hijau adalah makanan Khas Karawang yang berasal dari daerah Rengasdengklok</div>
+					  	</div>
+					</div>
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 22s infinite;" src="images/poster/poster-03.jpg">
+						<div class="overlay">
+					    	<div class="text">Sekitar tahun 1583, Sunan Kudus menggunakan bentuk wayang golek awal ini untuk menyebarkan Islam di masyarakat</div>
+					  	</div>
+					</div>
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 19s infinite;" src="images/poster/poster-04.jpg">
+						<div class="overlay">
+					    	<div class="text">Dalam bahasa Sunda, karawang mempunyai arti "penuh dengan lubang". Bisa jadi pada daerah Karawang zaman dulu banyak ditemui lubang</div>
+					  	</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 21s infinite;" src="images/poster/poster-06.jpg">
+						<div class="overlay">
+					    	<div class="text">dulu, Pemakai topeng ini hanya sampai tahun 1949, sebab semenjak itu dilarang oleh penguasa setempat pada masa itu (Batalion X)</div>
+					  	</div>
+					</div>
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 17s infinite;" src="images/poster/poster-07.jpg">
+						<div class="overlay">
+					    	<div class="text">Sebagian besar wilayah Kabupaten Karawang adalah dataran rendah, dan di sebagian kecil di wilayah selatan berupa dataran tinggi</div>
+					  	</div>
+					</div>
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 14s infinite;" src="images/poster/poster-05.jpg">
+						<div class="overlay">
+					    	<div class="text">Di Indonesia, reog jenis ini diperkenalkan secara nasional oleh Kelompok Reog BKAK, sebuah kelompok dari Polri</div>
+					  	</div>
+					</div>
+					<div class="content padding container">
+						<img class="image" alt="avatar" style="width: 100%;height: auto;animation: angkasa 24s infinite;" src="images/poster/poster-08.jpg">
+						<div class="overlay">
+					    	<div class="text">"Rampak" berasal dari bahasa sunda yang bermakna serempak atau secara bersama-sama</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="background-color: #000a18;color: #b0bec5;">
+				<div style="padding: 3% 3%;">
+					<div class="main-content">
+						<div class="content">
+							<p style="font-weight: bolder;font-size:40px;text-decoration:underline;">RUANG</p>
+							<p style="font-family: segoe script;">Rupa Karawang</p><br/>
+							<ul>
+								<a style="text-decoration: none;color: inherit;" href="index.html"><li>BERANDA</li></a>
+							</ul>
+						</div>
+						<div class="content" align="left">
+							<b><u>Kontak Kami</u></b><br/><br/>
+							<p>Rupakarawang@gmail.com</p><br/>
+							<p>(0264) 8386883</p>
+						</div>
+						<div class="content" align="left">
+							<b><u>Alamat Kantor</u></b><br/><br/>
+							<p>Jl. Raya Parakan No.70, Cikampek Utara, Kec. Kotabaru, Kabupaten Karawang, Jawa Barat 41373</p><br/>
+							<form>
+								<input placeholder="Telusuri" style="width: 50%;" class="cari" type="text" name=""><button>Cari</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content"><small>&copy; 2019 Mutu Team - <a href="about.html" style="text-decoration: none;color:#78909c;">Tentang Kami</a></small></div>
+				</div>
+			</div>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" href="images/logo2.png">
+<title>Detail | RUANG</title>
+</head>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<style type="text/css">* {scroll-behavior: inherit;}</style>
+<body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img style="width: 120px;height: auto;" src="images/logo.png"></a>
+            </div>
+            <ul>
+                <li>
+                    <form>
+                        <input placeholder="Telusuri" class="cari" type="text" name="" style="width: 210px;"><button>Cari</button>
+                    </form>
+                </li>
+                <div class="dropdown">
+                <li><a href="notifikasi.html"><img class="navicon dropbtn" src="images/notif.png"></a></li>
+                    <div style="overflow: auto;" class="dropdown-content">
+                        <div style="padding: 3% 3%;">
+                            <b>NOTIFIKASI</b>
+                        </div>
+                        <div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+                            <small style="font-weight: bolder;">INFORMASI PESANAN</small><br/>
+                            <small>Kurirmu Akan tiba dirumahmu lohh. jangan kemana-mana dulu, Tunggu aja ...</small>
+                        </div>
+                        <div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+                            <small style="font-weight: bolder;">PEMBELIAN BERHASIL</small><br/>
+                            <small>ASIIIKK... Barangnya sudah ditangan nihh. gimana menurut kamu, hebatkan kurir ...</small>
+                        </div>
+                        <div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+                            <small style="font-weight: bolder;">EKSTRA GRATIS ONGKIR</small><br/>
+                            <small>Terima kasih sudah bergabung di Ruang! Voucher Gratis Ongkir Min. Belanja RP0 ...</small>
+                        </div>
+                        <hr/>
+                        <a align="center" href="notifikasi.html"><small><b>Selengkapnya</b></small></a>
+                    </div>
+                </div>
+                <li><a href="index.html"><img class="navicon" src="images/home.png"></a></li>
+                <li><a href="cart.html"><img class="navicon" src="images/cart.png">&nbsp; Keranjang</a></li>
+                <li style="border-left: 1px solid black"><a href="login.html"><button>Masuk</button></a></li>
+            </ul>
+        </header>
+        <div class="line">
+            <ul>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="index.html#promo">Promo</a></li>
+            </ul>
+        </div>
+
+	<div class="container cf" style="margin: 10px auto;">
+        
+        <div class="detail cf" style="margin: 10px 0;">
+        	<div class="card" style="width: 100%;">
+            	<div class="main" style="float: left; width: 40%; margin-right: 1%;">
+                    <a href="#product"><img src="images/angklung.png" style="height: 350px;"/></a>
+                        <div class="secondimg">
+                            <a href="#img1"><img src="images/angklung.png" /></a>
+                            <a href="#img2"><img src="images/angklung.png" /></a>
+                            <a href="#img3"><img src="images/angklung.png" /></a>
+                            <a href="#img4"><img src="images/angklung.png" /></a>
+                        </div>                        
+				</div>
+                
+                <div class="main" style="width: 59%; margin-right: 0;">
+                	<h2 style="margin: 10px 0;">Angklung Tradisional</h2>
+                    <small>999 Favorit</small>
+                    <hr/>
+                    <h1 style="margin: 10px 0;">Rp89.000</h1>
+                    <label id="nego">Bisa Nego Sambil COD</label>
+                    <p style="margin: 10px 0;">Stok:&nbsp; 159 Unit</p>
+                    <p style="margin: 10px 0;">Merek:&nbsp; -</p>
+                    <p style="margin: 10px 0;">Kondisi:&nbsp; Baru</p>
+                    <p style="margin: 10px 0;">Warna:&nbsp; Cokelat</p>
+                    <p style="margin: 10px 0;">Berat:&nbsp; 1 Kg</p>
+                    	<button class="btn" id="myBtn" style="margin: 10px 0 5px 0;">Pesan Sekarang</button>
+                        <button class="btn-solid col-2"><p><img class="icon" src="images/love-i.png" />&nbsp;Favorit</p></button>
+                        <button class="btn-solid col-2" style="margin-left: 10px;"><p><img class="icon" src="images/chat-i.png" />&nbsp;Hubungi</p></button>
+                    <div class="modal" id="myModal">
+                        <div class="modal-content" style="width: 50%;">
+                            <div class="form-checkout">
+                                <form>
+                                    <input class="form-input" id="nama" type="text" placeholder="Nama Penerima"/>
+                                    <select class="form-input" style="width: 49.2%; float: left;">
+                                    	<option class="form-input" selected disabled="disabled">Metode Pengiriman</option>
+                                        <option>COD</option>
+                                        <option>JNE</option>
+                                        <option>J&T</option>
+                                    </select>
+                                    <input type="number" class="form-input" placeholder="Jumlah" style="width: 49.2%; margin-left: 5px;"/>
+                                    <input class="form-input arrowh" type="number" placeholder="Nomor Seluler"/>
+                                    <textarea class="form-input" placeholder="Alamat Lengkap"></textarea>
+                                    <br /><br />
+                                    <small>Total harga</small>
+                                    <input type="text" disabled class="form-input" placeholder="Rp89.000"/>
+                                    <button class="btn" style="width: 78%;" type="submit">Pesan!</button>
+                                    <span href="#" class="x btn" style="width: 20%;">Batal</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        <div class="main" style="width: 100%; display: inline; margin: 0;">
+       		<a href="#deskripsi"><div class="card submenu" id="motive1" style="border-radius: 5px 0px 0px 5px; cursor: pointer; font-family: Verdana, Geneva, sans-serif; padding: 0px 10px 0 25px; margin: 0;">
+            	<h3 style="margin: 10px 0;">Rincian</h3>
+            </div></a>
+            <a href="#ulasan"><div class="card submenu" id="motive2" style="border-radius: 0px 5px 5px 0px; cursor: pointer; font-family: Verdana, Geneva, sans-serif; padding: 0px 25px 0 15px; margin: 0 0 0 40px;">
+            	<h3 style="margin: 10px 0;">Ulasan</h3>
+            </div></a>
+            
+            <!--ini teh content submenu-->
+            <div style="position: relative; height: 820px; display: block;">
+                <div class="sub" id="ulasan" style="margin: 0 0;">
+                    <div class="submenu-content" style="display: ">
+                        <div class="card" style="margin: 0 0 0 0; width: 100%; display: block;">
+                            <div class="obrolan cf">
+                                <img src="images/user-i.png"/>
+                                <p>Alma Prayuda</p>
+                                <small>29 November 2019</small>
+                                <br /><br />
+                                <font color="black">Barang bagus dan seperti yang diharapkan, semoga awet</font>
+                            </div>
+                            <div class="obrolan cf">
+                                <img src="images/user-i.png"/>
+                                <p>Elang Bayu</p>
+                                <small>29 November 2019</small>
+                                <br /><br />
+                                <font color="black">Barang bagus dan seperti yang diharapkan, semoga awet</font>
+                            </div>
+                            <div class="obrolan cf">
+                                <img src="images/user-i.png"/>
+                                <p>Sutan Kumala</p>
+                                <small>29 November 2019</small>
+                                <br /><br />
+                                <font color="black">Barang bagus dan seperti yang diharapkan, semoga awet</font>
+                            </div>
+                            <div class="obrolan cf">
+                                <img src="images/user-i.png"/>
+                                <p>Sutan Kumala</p>
+                                <small>29 November 2019</small>
+                                <br /><br />
+                                <font color="black">Barang bagus dan seperti yang diharapkan, semoga awet</font>
+                            </div>
+                            <div class="obrolan cf">
+                                <img src="images/user-i.png"/>
+                                <p>Sutan Kumala</p>
+                                <small>29 November 2019</small>
+                                <br /><br />
+                                <font color="black">Barang bagus dan seperti yang diharapkan, semoga awet</font>
+                            </div>
+                            <div class="obrolan cf">
+                                <img src="images/user-i.png"/>
+                                <p>Sutan Kumala</p>
+                                <small>29 November 2019</small>
+                                <br /><br />
+                                <font color="black">Barang bagus dan seperti yang diharapkan, semoga awet</font>
+                            </div>
+                        </div>
+                        <div class="card" style="margin: 10px 0 0 0; width: 100%; display: block;">
+                            <h3 style="margin: 10px;">Berikan komentar terbaikmu</h3>
+                            <div class="obrolan cf" style="border: none; margin: 10px;">
+                                <img src="images/user-i.png"/>
+                                <p>Purnomo</p>
+                                <br /><br />
+                                <div style="">
+                                	<input type="text" class="form-input" placeholder="Ketik disini" style="border: none; border-bottom: 1px dotted #ccc; margin-bottom: 0; width: 50%; height: 40px; outline: none;"/>
+                                	<button type="submit" id="send-i" class="" style="overflow: hidden; max-width: 50px; padding: 3px 0 3px 10px; position: relative; top: 10px; border-radius: 3px; display: inline-block; width: auto; background: rgb(0, 10, 18);"><img id="send" src="images/send-i.png" style="width: 30px;"/></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sub" id="deskripsi" style="">
+                    <div class="submenu-content" style="display: ;">
+                        <div class="card" style="margin: 0 0 0 0; width: 100%; display: block;">
+                            <div style="margin: 50px 70px 5px 70px; height: auto;">
+                            
+                            	<div class="cf" style="border-bottom: 1px solid #ccc; padding-bottom: 15px;">
+                                	<div style="float: left; width: 10%; height: 100%;">
+                                		<p>Spesifikasi</p>
+                                	</div>
+                                    
+                                    <div style="float: left; width: 120px; line-height: 25px;">
+                                		<p>Kategori<span style="float: right;">:</span></p>
+                                        <p>Berat<span style="float: right;">:</span></p>
+                                        <p>Buatan<span style="float: right;">:</span></p>
+                                        <p>Model<span style="float: right;">:</span></p>
+                                	</div>
+                                    
+                                    <div style="margin-left: 10px; float: left; width: 250px; line-height: 25px;">
+                                		<p>Alat Musik</p>
+                                        <p>1 Kg</p>
+                                        <p>Jawa Barat</p>
+                                        <p>Angklung 18 Nada-AK-005</p>
+                                	</div>
+                                </div>
+                                
+                                <div class="cf" style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+                                	<div style="float: left; width: 10%; height: 100%;">
+                                		<p>Deskripsi</p>
+                                	</div>
+                                    
+                                    <div style="float: left; width: 90%; line-height: 25px;">
+                                		<p>Angklung 18 nada cocok sekali digunakan untuk tampil saat pentas seni diacara Sekolah, Nasional, bahkan Internasional.</p>
+                                        <p>Spesifikasi :</p>
+                                        <p>1. Bahan Bambu Putih (bambu Tali)</p>
+                                        <p>2. Pengikat Tali Rotan</p>
+                                        <p>3. Notasi Nada : G, A, B, C, D, E, F, G, A, B, c, d', e', f', g', a', b', c', atau
+
+(Nada Paling Rendah di Awali Nada: SOL", LA", SI", DO, RE, MI, FA, SOL, LA, SI, do', re', mi', fa', sol', la', si', do'(nada paling tinggi)</p>
+                                        <p>4. Ukuran Angklung Paling Besar (Nada Paling Rendah) : Tinggi 60 cm, Lebar 26 cm</p>
+                                        <p>5. Ukuran Angklung Paling Kecil (Nada Paling Tinggi) : Tinggi 18 cm, Lebar 11 cm</p>
+                                        <p>6. POLOS (Tanpa Grafir)</p>
+                                        <p>7. Jumlah Nada : 18 Buah Notasi Nada</p>
+                                        <br>
+                                        <p>Model : Angklung 18 Nada-AK-005</p>
+                                        <p>Ukuran (L x W x H cm) : 110 x 30 x 24</p>
+                                        <p>Berat (kg) : 1</p>
+                                	</div>
+                                </div>
+                                
+                                <div class="cf" style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+                                	<div style="float: left; width: 10%; height: 100%;">
+                                		<p>Catatan</p>
+                                	</div>
+                                    
+                                    <div style="float: left; width: 90%; line-height: 25px;">
+                                    	<small style="background: #e3365f; color: white; padding: 0 3px; border-radius: 2px;">Catatan barang</small>
+                                		<p>Barang yang telah dibeli tidak dapat dikembalikan kecuali apabila barang yang diterima rusak pada saat pengiriman.</p>
+                                        <p>Barang 100% baru dan dibuat asli dari Karawang.</p>
+                                	</div>
+                                </div>
+                                
+                                <div class="cf" style="padding: 15px 0;">
+                                	<div style="float: left; width: 50%; margin-top: 15px; vertical-align: middle;">
+                                		<a href="#" id="lapor" style="color: red; text-decoration: none"><small>Laporkan barang</small></a>
+                                	</div>
+                                    
+                                    <div style="float: right; width: 35%; line-height: 25px; vertical-align: middle;">
+                                    	<p style="margin-left: 95px; display:inline-block; margin-right: 50px;">Berminat <span style="font-family: Arial, Helvetica, sans-serif;">?</span></p>
+                                        <a href="#" class="btn" style="padding: 10px 10px; width: 40%; border: px solid black">Pesan sekarang</a>
+                                	</div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+       </div>
+    </div>
+    
+    <!--ini teh modal-->
+    <div class="modalcss" id="product">
+		<div class="modal-container">
+        	<img src="images/angklung.png" />
+            <a href="#" class="close" style="text-decoration: none;">&times;</a>
+		</div>
+	</div>
+                        
+    <div class="modalcss" id="img1">
+    	<div class="modal-container">
+        	<img src="images/angklung.png" />
+            <a href="#" class="close" style="text-decoration: none;">&times;</a>
+        </div>
+	</div>
+                        
+	<div class="modalcss" id="img2">
+    	<div class="modal-container">
+        	<img src="images/angklung.png" />
+            <a href="#" class="close" style="text-decoration: none;">&times;</a>
+        </div>
+    </div>
+                        
+    <div class="modalcss" id="img3">
+    	<div class="modal-container">
+        	<img src="images/angklung.png" />
+            <a href="#" class="close" style="text-decoration: none;">&times;</a>
+		</div>
+	</div>
+                        
+    <div class="modalcss" id="img4">
+    	<div class="modal-container">
+        	<img src="images/angklung.png" />
+            <a href="#" class="close" style="text-decoration: none;">&times;</a>
+        </div>
+	</div>
+
+    <center>
+    <footer>
+				<div style="padding: 3% 3%;">
+					<div class="main-content">
+						<div class="content">
+							<p style="font-weight: bolder;font-size:40px;text-decoration:underline;">RUANG</p>
+							<p style="font-family: segoe script;">Rupa Karawang</p><br/>
+							<ul>
+								<a style="text-decoration: none;color: inherit;" href="galeri.html"><li>GALERI</li></a>
+							</ul>
+						</div>
+						<div class="content" align="left">
+							<b><u>Kontak Kami</u></b><br/><br/>
+							<p>Rupakarawang@gmail.com</p><br/>
+							<p>(0264) 8386883</p>
+						</div>
+						<div class="content" align="left">
+							<b><u>Alamat Kantor</u></b><br/><br/>
+							<p>Jl. Raya Parakan No.70, Cikampek Utara, Kec. Kotabaru, Kabupaten Karawang, Jawa Barat 41373</p><br/>
+							<form>
+								<input placeholder="Telusuri" style="width: 50%;" class="cari" type="text" name=""><button>Cari</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content"><small>&copy; 2019 Mutu Team - <a href="about.html" style="text-decoration: none;color:#78909c;">Tentang Kami</a></small></div>
+				</div>
+			</footer>
+            </center>
+</body>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("x")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

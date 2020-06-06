@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rupa Karawang</title>
+		<link rel="icon" href="images/logo2.png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=" theme-color" content="#000a12">
+		<style type="text/css">
+.banner-content{
+	display: flex;
+}
+.content-img{
+	flex: 1;
+}
+.heroimg{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.banner{
+	animation:  gesr 8s infinite ease;
+	width: 200%;
+	height: auto;
+}
+@keyframes gesr{
+	0%{
+		margin-left: 0%;
+	}
+	5%{
+		margin-left: 0%;
+	}
+	10%{
+		margin-left: 0%;
+	}
+	20%{
+		margin-left: 0%;
+	}
+	30%{
+		margin-left: 0%;
+	}
+	40%{
+		margin-left: 0%;
+	}
+	50%{
+		margin-left: -100%;
+	}
+	55%{
+		margin-left: -100%;
+	}
+	60%{
+		margin-left: -100%;
+	}
+	70%{
+		margin-left: -100%;
+	}
+	80%{
+		margin-left: -100%;
+	}
+	90%{
+		margin-left: -100%;
+	}
+	100%{
+		margin-left: 0%;
+	}
+}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<a href="index.html"><img style="width: 120px;height: auto;" src="images/logo.png"></a>
+			</div>
+			<ul>
+				<li>
+					<form>
+						<input placeholder="Telusuri" class="cari" type="text" name=""><button>Cari</button>
+					</form>
+				</li>
+				<div class="dropdown">
+				<li><a href="notifikasi.html"><img class="navicon dropbtn" src="images/notif.png"></a></li>
+				  	<div style="overflow: auto;" class="dropdown-content">
+						<div style="padding: 3% 3%;">
+							<b>NOTIFIKASI</b>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">INFORMASI PESANAN</small><br/>
+							<small>Kurirmu Akan tiba dirumahmu lohh. jangan kemana-mana dulu, Tunggu aja ...</small>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">PEMBELIAN BERHASIL</small><br/>
+							<small>ASIIIKK... Barangnya sudah ditangan nihh. gimana menurut kamu, hebatkan kurir ...</small>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">EKSTRA GRATIS ONGKIR</small><br/>
+							<small>Terima kasih sudah bergabung di Ruang! Voucher Gratis Ongkir Min. Belanja RP0 ...</small>
+						</div>
+						<hr/>
+						<a align="center" href="notifikasi.html"><small><b>Selengkapnya</b></small></a>
+					</div>
+				</div>
+				<li><a href="index.html"><img class="navicon" src="images/home.png"></a></li>
+				<li><a href="cart.html"><img class="navicon" src="images/cart.png">&nbsp; Keranjang</a></li>
+				<li style="border-left: 1px solid black"><a href="login.html"><button>Masuk</button></a></li>
+			</ul>
+		</header>
+		<div class="line">
+			<ul>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li><a href="index.html#promo">Promo</a></li>
+			</ul>
+		</div>
+		<div class="top">
+			<a href="#" style="text-decoration: none;color: white;"><button title="TOP"><img class="navicon" src="images/top.png"></button></a>
+		</div>
+		<div class="heroimg">
+			<div class="banner banner-content">
+				<div class="content-img">
+					<img style="width: 100%;height: auto;" src="images/banner1.jpg">
+				</div>
+				<div class="content-img">
+					<img style="width: 100%;height: auto;" src="images/banner2.jpg">
+				</div>
+			</div>
+		</div>
+<!-------------------------------------CONTENT-------------------------------------------->
+		
+		<center>
+			<div style="background-color: #000a18;color:white;">
+				<div class="main-content">
+					<div align="left" style="padding: 14px;">
+						<h2 class="animasi-text" align="left">Promo Hari Ini</h2>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content border-dikit" style="background-color: #000a12;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/Angklung.jpg">
+						</div>
+						<div>
+							<b>Angklung Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp120.000</small>
+								<p>Rp89.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content border-dikit" style="background-color: #000a12;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/Angklung.jpg">
+						</div>
+						<div>
+							<b>Angklung Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp120.000</small>
+								<p>Rp89.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content border-dikit" style="background-color: #000a12;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/Angklung.jpg">
+						</div>
+						<div>
+							<b>Angklung Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp120.000</small>
+								<p>Rp89.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content border-dikit" style="background-color: #000a12;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/Angklung.jpg">
+						</div>
+						<div>
+							<b>Angklung Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp120.000</small>
+								<p>Rp89.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content border-dikit" style="background-color: #000a12;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/Angklung.jpg">
+						</div>
+						<div>
+							<b>Angklung Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp120.000</small>
+								<p>Rp89.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail.html"><button id="promo">BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="main-content" style="background: linear-gradient(360deg, #ffffff, #000a18);">
+					<div style="flex: 3;padding: 3% 3%;">
+						<img title="Spesial Harbolnas 11RB" src="images/BannerBolnas.png" class="event">
+					</div>
+				</div>
+			</div>
+<!-------------------------- CONTENT 2 --------------------------->
+			<div style="padding:1% 1%;background-color:white;color:#263238;">
+				<div class="main-content">
+					<div style="padding: 14px;">
+						<h3 style="color: #000a18;" align="left">SPESIAL HARBOLNAS <span style="font-family: segoe script;">Karawang</span> <img src="images/lokasi.png" class="navicon"></h3>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-------------------------- CONTENT 3 --------------------------->
+			<div style="padding:1% 1%;background-color:white;color:#263238;">
+				<div class="main-content">
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+					<div class="content" style="background-color: #eceff1;border:1px solid #78909c;">
+						<div>
+							<img style="width: 80%;height: auto;" src="images/kendang.jpg">
+						</div>
+						<div>
+							<b>Kendang Tradisional</b><br/><br/>
+							<div align="left" style="padding-left: 10%;">
+								<small style="text-decoration: line-through;color: grey;">Rp310.000</small>
+								<p>Rp11.000</p><br/>
+							</div><br/>
+							<div class="main-content">
+								<div class="content">
+									<i onclick="favorit(this)"><img class="favorit" src="images/heart-dark.png"></i>
+								</div>
+								<div class="content">
+									<a href="detail2.html"><button>BELI</button></a>
+								</div>
+							</div>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="main-content" style="padding: 4% 4%;background-color: #f5f5f5;">
+					<div class="content" style="color: #263238;text-align: justify;">
+						<b>Belanja Online Murah di <span style="font-family: segoe script;">RUANG</span></b><br/><br/>
+						<small>
+Ruang merupakan situs belanja online di Indonesia yang menjual beragam produk Tradisional maupun Modern yang bertema budaya sebagai kebutuhan seluruh masyarakat Indonesia. Seiring berkembangnya teknologi, semakin banyak aktivitas yang dilakukan secara digital, lebih mudah dan praktis, termasuk kegiatan pembelanjaan yang kini semakin marak dilakukan secara digital, baik melalui komputer, laptop, hingga smartphone yang bisa diakses kapan saja dan di mana saja. Ruang hadir sebagai toko online Kulturisasi dengan sistem Penjual ke konsumen. Sarana jual beli online Ruang memiliki visi untuk menjadi marketplace berkulturisasi nomor satu di Indonesia dengan misi untuk memberdayakan UKM dan memperkenalkan Budaya Karawang di seluruh penjuru Indonesia. Rupa-rupa dan anekaragam produk yang dibutuhkan seluruh masyarakat Indonesia ada disini.
+						</small>
+					</div>
+				</div>
+				<div class="main-content" style="padding: 0 4% 2% 4%;background-color: #f5f5f5;">
+					<div class="content" align="left">
+						<font style="font-size: 30px;font-family: segoe script;">Rupa Karawang</font>	
+					</div>
+					<div class="content" align="right">
+						<p style="display: inline;">Ikuti Kami : </p>
+						<img style="padding: 1%;cursor: pointer;" title="Facebook" src="images/sosmed/facebook.png" class="navicon">
+						<img style="padding: 1%;cursor: pointer;" title="Twitter" src="images/sosmed/twitter.png" class="navicon">
+						<img style="padding: 1%;cursor: pointer;" title="Instagram" src="images/sosmed/instagram.png" class="navicon">
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div style="padding: 3% 3%;">
+					<div class="main-content">
+						<div class="content">
+							<p style="font-weight: bolder;font-size:40px;text-decoration:underline;">RUANG</p>
+							<p style="font-family: segoe script;">Rupa Karawang</p><br/>
+							<ul>
+								<a style="text-decoration: none;color: inherit;" href="galeri.html"><li>GALERI</li></a>
+							</ul>
+						</div>
+						<div class="content" align="left">
+							<b><u>Kontak Kami</u></b><br/><br/>
+							<p>Rupakarawang@gmail.com</p><br/>
+							<p>(0264) 8386883</p>
+						</div>
+						<div class="content" align="left">
+							<b><u>Alamat Kantor</u></b><br/><br/>
+							<p>Jl. Raya Parakan No.70, Cikampek Utara, Kec. Kotabaru, Kabupaten Karawang, Jawa Barat 41373</p><br/>
+							<form>
+								<input placeholder="Telusuri" style="width: 50%;" class="cari" type="text" name=""><button>Cari</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content"><small>&copy; 2019 Mutu Team - <a href="about.html" style="text-decoration: none;color:#78909c;">Tentang Kami</a></small></div>
+				</div>
+			</footer>
+		</center>
+
+<script>
+	function favorit(id) {
+	  id.innerHTML = "<img class=\"favorit\" src=\"images/heart-on.png\">";
+	}
+</script>
+	</body>
+</html>

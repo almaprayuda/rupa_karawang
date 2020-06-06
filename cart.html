@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cart | RUANG</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="icon" href="images/logo2.png">
+<style>
+	.card img {cursor: pointer}
+</style>
+<body>
+		<header>
+			<div class="logo">
+				<a href="index.html"><img style="width: 120px;height: auto;" src="images/logo.png"></a>
+			</div>
+			<ul>
+				<li>
+					<form>
+						<input placeholder="Telusuri" class="cari" type="text" name="" style="width: 210px;"><button>Cari</button>
+					</form>
+				</li>
+				<div class="dropdown">
+				<li><a href="notifikasi.html"><img class="navicon dropbtn" src="images/notif.png"></a></li>
+				  	<div style="overflow: auto;" class="dropdown-content">
+						<div style="padding: 3% 3%;">
+							<b>NOTIFIKASI</b>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">INFORMASI PESANAN</small><br/>
+							<small>Kurirmu Akan tiba dirumahmu lohh. jangan kemana-mana dulu, Tunggu aja ...</small>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">PEMBELIAN BERHASIL</small><br/>
+							<small>ASIIIKK... Barangnya sudah ditangan nihh. gimana menurut kamu, hebatkan kurir ...</small>
+						</div>
+						<div style="background-color: #f5f5f5;border: 1px solid #eeeeee;color: #616161;padding: 2%;">
+							<small style="font-weight: bolder;">EKSTRA GRATIS ONGKIR</small><br/>
+							<small>Terima kasih sudah bergabung di Ruang! Voucher Gratis Ongkir Min. Belanja RP0 ...</small>
+						</div>
+						<hr/>
+						<a align="center" href="notifikasi.html"><small><b>Selengkapnya</b></small></a>
+					</div>
+				</div>
+				<li><a href="index.html"><img class="navicon" src="images/home.png"></a></li>
+				<li style="margin-right: 30px"><a href="cart.html"><img class="navicon" src="images/cart.png">&nbsp; Keranjang</a></li>
+				<li style="border-left: 1px solid black">
+                    <img src="images/user-i.png" style="background: white; padding: 5px; width: 40px; border-radius: 50%; position: absolute; right: 30px; top: 20px;">
+                </li>
+			</ul>
+		</header>
+		<div class="line">
+			<ul>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li><a href="index.html#promo">Promo</a></li>
+			</ul>
+		</div>
+		<div class="top">
+			<a href="#" style="text-decoration: none;color: white;"><button title="TOP"><img class="navicon" src="images/top.png"></button></a>
+		</div>
+	<div class="container" style="height: 1050px; margin: 10px auto;">
+    
+    				<div class="modal" id="modal" style="margin: 0; top: 0;">
+                        <div class="modal-content" style="width: 30%;">
+                        <span style="position: relative; left: 350px; font-size: 25px; cursor: pointer;" class="klose">&times;</span>
+                            <div style="text-align: center; padding: 20px;">
+                                <img src="images/sad.png" style="width: 100px;"/>
+                                <h3 style="margin: 10px auto;">Yakin Hapus?</h3>
+                                <p>Kamu yakin ingin menghapus barang yang kamu pilih<span style="font-family: 'Times New Roman', Times, serif;">?</span></p><br />
+                                <button class="btn" style="margin: 5px auto; border-radius: 2px;">Hapus dan sukai barang ini</button>
+                                <button class="btn-solid" style="margin: 0; height: 40px; border-radius: 2px;">Hapus</button>
+                            </div>
+                        </div>
+                    </div>
+    	
+        <div style="width: 65%; float: left;">
+            <h2 style="margin-bottom: 10px;">Keranjang Belanja</h2>
+            <div class="card" style="width: 100%; padding: 0;">
+                <div style="padding: 18px 0; border-bottom: 1px solid #ccc;">
+                    <div style="float: left; margin: 30px 20px 0 20px; display: inline-block;">
+                    </div>
+                    <img src="images/angklung.jpg" style="width: 100px; float: left; margin-right: 20px;"/>
+                    <label style="display: inline-block; width: 55%;">Angklung Tradisional</label>
+                    <label style="padding-right: 30px;">Rp89.000</label>
+                    <span style="display: inline-block; padding: 0; position: relative; top: -30px;"><button style="border: none; background: none; outline: none;" id="delete"><span style="position: absolute; color: black; font-size: 30px; font-weight: 900;">&times;</span></button></span>
+                    <br /><br />
+                    <small>Jumlah</small><br />
+                    <input class="form-input" style="border: 1px solid #ccc; width: auto; height: 25px;" placeholder="1" type="number"/>
+                </div>
+                <div class="cf" style="padding: 10px 20px; margin: 0;">
+                    <div style="float: left;">
+                        <label>Total: &nbsp;<span style="font-weight: bolder;">Rp89.000</span></label><br />
+                        <small>Belum termasuk ongkir ya..</small>
+                    </div>
+                    <div class="cf">
+                        <button class="btn" style="float: right; display: inline-block; width: 100px; padding-top: 12px; padding-bottom: 10px;" type="submit">Beli</button>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="card" style="width: 100%; padding: 0; margin-top: 5px;">
+                <div style="padding: 18px 0; border-bottom: 1px solid #ccc;">
+                    <div style="float: left; margin: 30px 20px 0 20px; display: inline-block;">
+                    </div>
+                    <img src="images/kendang.jpg" style="width: 100px; float: left; margin-right: 20px;"/>
+                    <label style="display: inline-block; width: 55%;">Kendang Tradisional</label>
+                    <label style="padding-right: 30px;">Rp11.000</label>
+                    <span style="display: inline-block; padding: 0; position: relative; top: -30px;"><button style="border: none; background: none; outline: none;" id="delete"><span style="position: absolute; color: black; font-size: 30px; font-weight: 900;">&times;</span></button></span>
+                    <br /><br />
+                    <small>Jumlah</small><br />
+                    <input class="form-input" style="border: 1px solid #ccc; width: auto; height: 25px;" placeholder="1" type="number"/>
+                </div>
+                <div class="cf" style="padding: 10px 20px; margin: 0;">
+                    <div style="float: left;">
+                        <label>Total: &nbsp;<span style="font-weight: bolder;">Rp11.000</span></label><br />
+                        <small>Belum termasuk ongkir ya..</small>
+                    </div>
+                    <div class="cf">
+                        <button class="btn" style="float: right; display: inline-block; width: 100px; padding-top: 12px; padding-bottom: 10px;" type="submit">Beli</button>
+                    </div>
+                </div>
+            </div>
+		</div>
+        
+        <div style="width: 33%; margin-top: 4%; margin-left: 2%; display: inline-block; z-index: 1;">
+        	<div class="card" style="margin: 0; width: 100%; padding: 10px ; background: #ccc; border-radius: 0; text-align: center;">
+        		<h3>Yuk bayar</h3>
+        	</div>
+            <div class="card" style="padding: 5px 20px; display: block; margin: 0; border-radius: 0 0 5px 5px;">
+				<br />
+                <label style="line-height: 15px;">Keseluruhan:</label>
+                <input class="form-input" type="text" readonly="readonly" placeholder="Jumlah: Rp100.000" />
+                <button class="btn" type="submit" style="margin: 20px 0;">Lanjut bayar</button>
+            </div>
+		</div>
+        
+        <div class="card" style="width: 100%; margin-top: 30px; padding: 0;">
+        	<div class="" style="padding: 0px;">
+        		<h3 style="margin: 30px;">Yang mungkin anda cari</h3>
+                <div class="" style="position: relative;">
+                    <div class="slider" id="slider1" style="background: white; padding: 0 0 50px 0; margin: 0; width: 100%;">
+                        <div class="slider-content" style="display: block; z-index: 0; text-align:center;">
+                        
+                        	<div style="width: 40px;display:inline-block">
+                            	<span class="" style="padding: 10px; font-weight: bolder; font-size: 20px;"></span>
+                            </div>
+
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: inline-block; height: 100%; position: relative; top: -140px; left: 10px;">
+                                	<a class="btn-solid" style="border-radius: 2px; padding: 10px; font-weight: bolder; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif" href="#slider2">&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slider" id="slider2" style="background: white; margin: 0; width: 100%;">
+                            <div class="slider-content" style="z-index: 1; text-align: center">
+                            	<div style="display: inline-block; height: 100%; position: relative; top: -140px; left: -10px;">
+                                	<a class="btn-solid" style="border-radius: 2px; padding: 10px; font-weight: bolder; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif" href="#slider1">&lt;</a>
+                                </div>
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0; margin-right: 30px;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card fl" style="border: 1px solid #ccc; padding: 0;">
+                                    <img src="images/kendang.jpg" style="width: 200px; padding: 5px 5px 0 5px; border-bottom: px solid #ccc; box-shadow: 0px 2px 2px #ccc;"/><br />
+                                    <div style="width: 100%; margin: 10px 0 0 0; padding: 0 0 0 5px; max-width: 200px">
+                                        <div style="width: 100%;">
+                                            <img src="images/love-i.png" style="width: 15px; vertical-align:middle;"/>&nbsp;<small>999 Favorit</small>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 3px;">
+                                            <label style="font-size: 15px;">Kendang Tradisional</label>
+                                        </div>
+                                        <div style="width: 100%; margin: 5px 0 10px 0;">
+                                            <label style="font-size: 15px; font-weight: bolder;">Rp 150.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: inline-block; height: 100%; position: relative; top: -140px; left: 10px;">
+                                	<a class="btn-solid" style="border-radius: 2px; padding: 10px; font-weight: bolder; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif" href="#slider2">&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+        		</div>
+            </div>
+        </div>
+    </div>
+    <center>
+    <footer>
+			<div style="padding: 3% 3%;">
+					<div class="main-content">
+						<div class="content">
+							<p style="font-weight: bolder;font-size:40px;text-decoration:underline;">RUANG</p>
+							<p style="font-family: segoe script;">Rupa Karawang</p><br/>
+							<ul>
+								<a style="text-decoration: none;color: inherit;" href="galeri.html"><li>GALERI</li></a>
+							</ul>
+						</div>
+						<div class="content" align="left">
+							<b><u>Kontak Kami</u></b><br/><br/>
+							<p>Rupakarawang@gmail.com</p><br/>
+							<p>(0264) 8386883</p>
+						</div>
+						<div class="content" align="left">
+							<b><u>Alamat Kantor</u></b><br/><br/>
+							<p>Jl. Raya Parakan No.70, Cikampek Utara, Kec. Kotabaru, Kabupaten Karawang, Jawa Barat 41373</p><br/>
+							<form>
+								<input placeholder="Telusuri" style="width: 50%;" class="cari" type="text" name=""><button>Cari</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="content"><small>&copy; 2019 Mutu Team - <a href="about.html" style="text-decoration: none;color:#78909c;">Tentang Kami</a></small></div>
+				</div>
+			</footer>
+			</center>
+</body>
+<script>
+// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("delete");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("klose")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>
